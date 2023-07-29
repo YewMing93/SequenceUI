@@ -1,0 +1,34 @@
+﻿<Window x:Class="KeySeq.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeySeq.Views"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="580" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+
+        <Grid Grid.Row="0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                <local:SequenceControl x:Name="SequenceControl1" Grid.Row="0" Grid.Column="0" />
+                <local:SequenceControl x:Name="SequenceControl2" Grid.Row="0" Grid.Column="2" />
+            </Grid>
+        </Grid>
+        
+        <Grid Grid.Row="1">
+            <Button Content="{Binding StartButtonContent}" Command="{Binding StartCommand}" IsDefault="True" Width="80" Height="25" Margin="5"/>
+        </Grid>
+        
+    </Grid>
+</Window>

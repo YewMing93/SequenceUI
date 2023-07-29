@@ -1,0 +1,4 @@
+Sequence 1
+Enabled:True,DirectionToFace:2,DurationKeyToPress:200,KeyToPress:a
+Enabled:True,DirectionToFace:2,DurationKeyToPress:200,KeyToPress:a
+Enabled:True,DirectionToFace:2,DurationKeyToPress:200,KeyToPress:a
